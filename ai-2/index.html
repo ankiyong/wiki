@@ -1,287 +1,61 @@
-<!doctype html>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>AI-2 수업 위키 입장</title><style>body{margin:0;background:#f6f8fb;color:#172033;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Pretendard,"Noto Sans KR",Arial,sans-serif;line-height:1.65}#gate{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}.login-card{width:min(520px,100%);background:#fff;border:1px solid #dbe3ef;border-radius:22px;padding:30px;box-shadow:0 10px 30px rgba(15,23,42,.08)}.login-card h1{margin:0 0 8px;font-size:28px}.muted{color:#64748b;margin-top:0}label{display:block;font-weight:700;margin:18px 0 8px}input{width:100%;font-size:18px;padding:14px;border:1px solid #cbd5e1;border-radius:12px}button{width:100%;margin-top:14px;background:#2563eb;color:white;border:0;border-radius:12px;padding:14px 18px;font-size:17px;font-weight:800;cursor:pointer}button:hover{background:#1d4ed8}.error{color:#dc2626;font-weight:700;min-height:24px}.hint{font-size:13px;color:#64748b;margin-top:14px}#content{display:none}</style></head><body><div id="gate"><div class="login-card"><h1>AI-2 수업 위키</h1><p class="muted">Gemini 유료 기능 실습 강의 자료입니다. 강사가 안내한 입장 코드를 입력하세요.</p><label for="password">입장 코드</label><input id="password" type="password" autocomplete="current-password" placeholder="입장 코드 입력"/><button id="enter">입장하기</button><p id="error" class="error"></p><p class="hint">※ 이 화면은 가벼운 입장 코드입니다. 민감정보·유료 원본자료 보호용 보안 로그인은 아닙니다.</p><p class="hint"><a href="../ai/">AI 강의 목록으로 돌아가기</a></p></div></div><div id="content"><!-- protected-content-start --><!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI-2 수업 위키 입장</title>
-  <style>
-    body{margin:0;background:#f6f8fb;color:#172033;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Pretendard,"Noto Sans KR",Arial,sans-serif;line-height:1.65}
-    #gate{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
-    .login-card{width:min(520px,100%);background:#fff;border:1px solid #dbe3ef;border-radius:22px;padding:30px;box-shadow:0 10px 30px rgba(15,23,42,.08)}
-    .login-card h1{margin:0 0 8px;font-size:28px} .muted{color:#64748b;margin-top:0}
-    label{display:block;font-weight:700;margin:18px 0 8px} input{width:100%;font-size:18px;padding:14px;border:1px solid #cbd5e1;border-radius:12px}
-    button{width:100%;margin-top:14px;background:#2563eb;color:white;border:0;border-radius:12px;padding:14px 18px;font-size:17px;font-weight:800;cursor:pointer}
-    button:hover{background:#1d4ed8} .error{color:#dc2626;font-weight:700;min-height:24px} .hint{font-size:13px;color:#64748b;margin-top:14px}
-    #content{display:none}
-  </style>
-</head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AI-2 Gemini 유료 기능 실습 강의</title>
+<style>
+:root{--bg:#f6f8fb;--ink:#172033;--muted:#64748b;--card:#fff;--line:#dbe3ef;--blue:#2563eb;--purple:#7c3aed;--green:#16a34a;--orange:#ea580c;--red:#dc2626;--soft:#eff6ff;--warn:#fff7ed;--ok:#f0fdf4;--violet:#f5f3ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Pretendard,"Noto Sans KR",Arial,sans-serif;line-height:1.65}header{background:linear-gradient(135deg,#1d4ed8,#7c3aed);color:white;padding:46px 24px}header .wrap{max-width:1120px;margin:0 auto}h1{font-size:38px;line-height:1.2;margin:0 0 12px}header p{font-size:18px;max-width:900px;margin:6px 0;opacity:.95}.wrap{max-width:1120px;margin:0 auto;padding:24px}.layout{display:grid;grid-template-columns:260px 1fr;gap:22px;align-items:start}.toc{position:sticky;top:18px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}.toc a{display:block;color:#334155;text-decoration:none;padding:8px 4px;border-bottom:1px dashed #e5e7eb}.toc a:hover{color:var(--blue);font-weight:700}main{display:grid;gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 4px 14px rgba(15,23,42,.05)}h2{font-size:27px;margin:0 0 14px}h3{font-size:21px;margin:18px 0 8px}.tag{display:inline-block;border-radius:999px;padding:5px 10px;font-size:13px;font-weight:800;margin:3px;background:#e0e7ff;color:#3730a3}table{width:100%;border-collapse:collapse;margin:12px 0;background:#fff;border-radius:12px;overflow:hidden}th,td{border:1px solid #e5e7eb;padding:11px 10px;vertical-align:top}th{background:#f1f5f9;text-align:left}tr:nth-child(even) td{background:#fbfdff}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.box{border-radius:14px;padding:16px;border:1px solid var(--line)}.box.ok{background:var(--ok)}.box.warn{background:var(--warn)}.box.violet{background:var(--violet)}.box.soft{background:var(--soft)}.quote{border-left:5px solid var(--blue);background:var(--soft);padding:14px 16px;border-radius:12px;margin:12px 0}.warning{border-left:5px solid var(--orange);background:var(--warn);padding:14px 16px;border-radius:12px;margin:12px 0}.check{border-left:5px solid var(--green);background:var(--ok);padding:14px 16px;border-radius:12px;margin:12px 0}pre{white-space:pre-wrap;background:#0f172a;color:#e5e7eb;border-radius:14px;padding:16px;overflow:auto;font-size:15px}.copy{float:right;background:#334155;color:white;border:0;border-radius:9px;padding:6px 9px;cursor:pointer}.copy:hover{background:#111827}.small{font-size:13px;color:var(--muted)}@media(max-width:900px){.layout{grid-template-columns:1fr}.toc{position:relative}.grid2,.grid3{grid-template-columns:1fr}h1{font-size:30px}}
+</style></head>
 <body>
-  <div id="gate">
-    <div class="login-card">
-      <h1>AI-2 수업 위키</h1>
-      <p class="muted">Gemini 유료버전 기준 강의 자료입니다. 강사가 안내한 입장 코드를 입력하세요.</p>
-      <label for="password">입장 코드</label>
-      <input id="password" type="password" autocomplete="current-password" placeholder="입장 코드 입력" />
-      <button id="enter">입장하기</button>
-      <p id="error" class="error"></p>
-      <p class="hint">※ 이 화면은 가벼운 입장 코드입니다. 민감정보·유료 원본자료 보호용 보안 로그인은 아닙니다.</p>
-      <p class="hint"><a href="../ai/">AI 강의 목록으로 돌아가기</a></p>
-    </div>
-  </div>
-  <div id="content"><!-- protected-content-start --><!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI-2 Gemini 유료버전 기준 강의 위키</title>
-  <style>
-    :root{--bg:#f6f8fb;--ink:#172033;--muted:#64748b;--card:#fff;--line:#dbe3ef;--blue:#2563eb;--green:#16a34a;--orange:#ea580c;--red:#dc2626;--purple:#7c3aed;--soft:#eff6ff;--warn:#fff7ed;--ok:#f0fdf4;}
-    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Pretendard,"Noto Sans KR",Arial,sans-serif;line-height:1.65;}
-    header{background:linear-gradient(135deg,#1d4ed8,#7c3aed);color:white;padding:46px 24px;} header .wrap{max-width:1120px;margin:0 auto} h1{font-size:38px;line-height:1.2;margin:0 0 12px} header p{font-size:18px;max-width:860px;margin:6px 0;opacity:.95}
-    .wrap{max-width:1120px;margin:0 auto;padding:24px}.layout{display:grid;grid-template-columns:250px 1fr;gap:22px;align-items:start}.toc{position:sticky;top:18px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}.toc a{display:block;color:#334155;text-decoration:none;padding:8px 4px;border-bottom:1px dashed #e5e7eb}.toc a:hover{color:var(--blue);font-weight:700}
-    main{display:grid;gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 4px 14px rgba(15,23,42,.05)} h2{font-size:27px;margin:0 0 14px} h3{font-size:21px;margin:18px 0 8px}.lead{font-size:18px}.tag{display:inline-block;border-radius:999px;padding:5px 10px;font-size:13px;font-weight:800;margin:3px}.tag.free{background:#e0f2fe;color:#0369a1}.tag.paid{background:#fef3c7;color:#92400e}.tag.pro{background:#ede9fe;color:#5b21b6}.tag.ultra{background:#fee2e2;color:#991b1b}
-    table{width:100%;border-collapse:collapse;margin:12px 0;background:#fff;border-radius:12px;overflow:hidden} th,td{border:1px solid #e5e7eb;padding:11px 10px;vertical-align:top} th{background:#f1f5f9;text-align:left} tr:nth-child(even) td{background:#fbfdff}
-    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.box{border-radius:14px;padding:16px;border:1px solid var(--line)}.box.free{background:#f0f9ff}.box.paid{background:#fff7ed}.box.ok{background:var(--ok)}.box.warn{background:var(--warn)}.box.danger{background:#fef2f2}.box.purple{background:#f5f3ff}
-    .quote{border-left:5px solid var(--blue);background:var(--soft);padding:14px 16px;border-radius:12px;margin:12px 0}.warning{border-left:5px solid var(--orange);background:var(--warn);padding:14px 16px;border-radius:12px;margin:12px 0}.check{border-left:5px solid var(--green);background:var(--ok);padding:14px 16px;border-radius:12px;margin:12px 0}
-    pre{white-space:pre-wrap;background:#0f172a;color:#e5e7eb;border-radius:14px;padding:16px;overflow:auto;font-size:15px}.copy{float:right;background:#334155;color:white;border:0;border-radius:9px;padding:6px 9px;cursor:pointer}.copy:hover{background:#111827}.small{font-size:13px;color:var(--muted)}
-    @media(max-width:900px){.layout{grid-template-columns:1fr}.toc{position:relative}.grid2{grid-template-columns:1fr} h1{font-size:30px}}
-  </style>
-</head>
-<body>
-<header><div class="wrap">
-  <h1>AI-2. Gemini 유료버전 기준 강의</h1>
-  <p>무료에서는 무엇이 제한되고, 유료에서는 무엇이 가능해지는지 공식 문서 기준으로 비교하며 실습합니다.</p>
-  <p><span class="tag free">무료 한계</span><span class="tag paid">유료 확장</span><span class="tag pro">Pro 중심</span><span class="tag ultra">Ultra 고급 기능</span></p>
-</div></header>
-<div class="wrap layout">
-<nav class="toc">
-  <strong>목차</strong>
-  <a href="#goal">수업 목표</a>
-  <a href="#message">핵심 메시지</a>
-  <a href="#plans">플랜 구분</a>
-  <a href="#compare">무료 vs 유료 한 장 비교</a>
-  <a href="#limits">1. 사용량·긴 자료</a>
-  <a href="#media">2. 영상·음성</a>
-  <a href="#research">3. 리서치·추론</a>
-  <a href="#content">4. 이미지·영상 제작</a>
-  <a href="#workspace">5. Google 앱 연동</a>
-  <a href="#practice">2시간 강의 흐름</a>
-  <a href="#prompts">실습 프롬프트</a>
-  <a href="#decision">유료 판단 기준</a>
-  <a href="#sources">공식 출처</a>
-</nav>
-<main>
-<section id="goal" class="card">
-  <h2>0. 오늘 수업 목표</h2>
-  <div class="check">
-    오늘 수업은 <strong>Gemini 유료버전 기준</strong>으로 진행합니다. 무료도 기본 활용은 가능하지만, 실제 업무·학습에서 유료가 필요한 지점을 비교해 판단 기준을 만드는 것이 목표입니다.
-  </div>
-  <ul>
-    <li>Gemini 무료/유료 플랜의 차이를 이해한다.</li>
-    <li>무료에서 제한되는 기능을 실제 활용 상황과 연결한다.</li>
-    <li>유료에서 확장되는 긴 문서, 영상·음성, 리서치, 예약 작업, Google 앱 연동을 이해한다.</li>
-    <li>내가 유료 결제를 해야 하는 상황인지 판단할 수 있다.</li>
-  </ul>
-</section>
+<header><div class="wrap"><h1>AI-2. Gemini 유료 기능 실습 강의</h1><p>무료와 비교하는 설명을 줄이고, 유료 플랜에서 실제로 해볼 수 있는 기능을 중심으로 실습합니다.</p><p><span class="tag">긴 문서 분석</span><span class="tag">긴 영상·음성 요약</span><span class="tag">Deep Research</span><span class="tag">예약 작업</span><span class="tag">Google 앱 연동</span><span class="tag">콘텐츠 제작</span></p></div></header>
+<div class="wrap layout"><nav class="toc"><strong>목차</strong><a href="#goal">수업 목표</a><a href="#prepare">준비물</a><a href="#flow">2시간 흐름</a><a href="#lab1">실습 1 긴 문서</a><a href="#lab2">실습 2 영상·음성</a><a href="#lab3">실습 3 Deep Research</a><a href="#lab4">실습 4 Google 앱 연동</a><a href="#lab5">실습 5 예약 작업</a><a href="#lab6">선택 실습 콘텐츠 제작</a><a href="#prompts">프롬프트 모음</a><a href="#safety">주의사항</a><a href="#sources">공식 출처</a></nav><main>
+<section id="goal" class="card"><h2>0. 수업 목표</h2><div class="check">오늘 수업의 목표는 “유료 기능을 소개로 듣는 것”이 아니라, <strong>유료 기능을 활용해 실제 결과물을 만드는 것</strong>입니다.</div><ul><li>긴 문서·자료를 업로드해 요약·분석·표 정리를 수행한다.</li><li>긴 영상·음성 자료를 학습노트, 회의록, 할 일 목록으로 바꾼다.</li><li>Deep Research로 출처 기반 조사 보고서 초안을 만든다.</li><li>Gmail/Docs/Sheets/Drive 등 Google 앱 연동 활용 흐름을 익힌다.</li><li>Scheduled actions로 반복 업무를 예약하는 방법을 익힌다.</li><li>각 결과물을 검토·수정·저장하는 습관을 만든다.</li></ul></section>
+<section id="prepare" class="card"><h2>1. 준비물</h2><table><tr><th>구분</th><th>준비 내용</th></tr><tr><td>계정</td><td>Google AI Pro 또는 Ultra 등 유료 Gemini 사용 가능 계정 권장</td></tr><tr><td>기기</td><td>PC, Chrome 브라우저</td></tr><tr><td>자료</td><td>긴 PDF/문서 1개, 짧은 표 자료 1개, 영상 또는 음성 샘플 1개</td></tr><tr><td>Google 앱</td><td>Gmail, Docs, Sheets, Drive 접속 가능 여부 확인</td></tr><tr><td>주의</td><td>실제 개인정보·고객정보·비공개 계약서·민감자료는 사용하지 않음</td></tr></table><div class="warning">계정·국가·언어·출시 상태에 따라 일부 메뉴가 다르게 보일 수 있습니다. 기능이 보이지 않으면 강사 화면 시연 또는 대체 실습으로 진행합니다.</div></section>
+<section id="flow" class="card"><h2>2. 2시간 강의 흐름</h2><table><tr><th>시간</th><th>실습</th><th>수강생 산출물</th></tr><tr><td>0:00~0:10</td><td>유료 기능 실습 목표와 안전 원칙</td><td>오늘 만들 결과물 확인</td></tr><tr><td>0:10~0:30</td><td>긴 문서 분석</td><td>긴 문서 요약표 + 확인 질문</td></tr><tr><td>0:30~0:50</td><td>영상·음성 자료 요약</td><td>회의록/학습노트/할 일 목록</td></tr><tr><td>0:50~1:10</td><td>Deep Research 보고서 만들기</td><td>출처 기반 미니 리서치 보고서</td></tr><tr><td>1:10~1:20</td><td>휴식</td><td>-</td></tr><tr><td>1:20~1:40</td><td>Google 앱 연동 업무 흐름</td><td>Docs 초안 또는 Sheets 정리표</td></tr><tr><td>1:40~1:55</td><td>Scheduled actions 반복 업무 예약</td><td>예약 작업 1개 설계안</td></tr><tr><td>1:55~2:00</td><td>정리와 활용 판단</td><td>내 유료 활용 시나리오 1개</td></tr></table></section>
+<section id="lab1" class="card"><h2>3. 실습 1 — 긴 문서 분석</h2><p>유료 버전의 긴 문맥 처리 장점을 활용해 긴 PDF, 보고서, 강의자료, 전자책 초안을 분석합니다.</p><div class="grid2"><div class="box soft"><h3>활동</h3><ol><li>문서 업로드</li><li>핵심 요약 요청</li><li>목차/논리 구조 분석</li><li>실행 과제와 확인 질문 추출</li></ol></div><div class="box ok"><h3>산출물</h3><ul><li>핵심 요약 5줄</li><li>목차 구조표</li><li>중요 주장과 근거</li><li>실무 적용 아이디어</li><li>확인 필요 목록</li></ul></div></div></section>
+<section id="lab2" class="card"><h2>4. 실습 2 — 긴 영상·음성 자료 요약</h2><p>유료 플랜의 긴 영상·음성 업로드 확장 기능을 활용해 회의, 강의, 인터뷰 자료를 구조화합니다.</p><table><tr><th>자료</th><th>실습 결과</th></tr><tr><td>강의 영상</td><td>학습노트, 핵심 개념, 복습 질문</td></tr><tr><td>회의 녹음</td><td>회의록, 결정사항, 담당자별 할 일</td></tr><tr><td>인터뷰 음성</td><td>질문별 답변 요약, 인사이트, 인용 후보</td></tr></table></section>
+<section id="lab3" class="card"><h2>5. 실습 3 — Deep Research 보고서</h2><p>Deep Research는 여러 출처를 바탕으로 조사 보고서 형태의 결과물을 만들 때 유용합니다.</p><div class="quote">수업에서는 “조사 주제 → 조사 질문 → 출처 기반 보고서 → 검토 질문” 순서로 진행합니다.</div><table><tr><th>주제 예시</th><th>산출물</th></tr><tr><td>청년 취업 트렌드</td><td>핵심 트렌드, 근거 출처, 준비 전략</td></tr><tr><td>생성형AI 업무 활용 사례</td><td>업무별 사례표, 도입 장단점</td></tr><tr><td>지역 교육 프로그램 기획</td><td>대상 분석, 프로그램 아이디어, 홍보 문구</td></tr></table></section>
+<section id="lab4" class="card"><h2>6. 실습 4 — Google 앱 연동 업무 흐름</h2><p>유료/Workspace 환경에서는 Gmail, Docs, Sheets, Drive 등에서 Gemini 활용 범위가 넓어집니다.</p><table><tr><th>앱</th><th>실습</th><th>산출물</th></tr><tr><td>Gmail</td><td>메일 초안 작성·교정</td><td>정중한 문의 메일</td></tr><tr><td>Docs</td><td>문서 초안 생성·수정</td><td>1쪽 보고서 초안</td></tr><tr><td>Sheets</td><td>표 데이터 요약·인사이트 추출</td><td>분석 요약표</td></tr><tr><td>Drive</td><td>파일 기반 질문·PDF 요약</td><td>자료별 핵심 정리</td></tr></table><div class="warning">조직 계정은 관리자 설정과 라이선스에 따라 기능이 다를 수 있습니다.</div></section>
+<section id="lab5" class="card"><h2>7. 실습 5 — Scheduled actions 반복 업무 예약</h2><p>Scheduled actions는 Gemini를 일회성 질문 도구가 아니라 반복 업무 비서처럼 쓰게 해줍니다.</p><div class="grid3"><div class="box ok"><h3>일정 브리핑</h3><p>매일 아침 오늘 일정과 준비물을 정리</p></div><div class="box ok"><h3>주간 회고</h3><p>매주 금요일 이번 주 회고 질문 받기</p></div><div class="box ok"><h3>학습 루틴</h3><p>매주 월요일 학습 계획과 복습 과제 받기</p></div></div></section>
+<section id="lab6" class="card"><h2>8. 선택 실습 — 콘텐츠 제작</h2><p>시간이 남거나 별도 심화 과정으로 확장할 때 이미지·영상 생성 기능을 실습합니다.</p><table><tr><th>기능</th><th>실습</th><th>산출물</th></tr><tr><td>이미지 생성/편집</td><td>카드뉴스 썸네일 또는 홍보 이미지 생성</td><td>이미지 시안 1개</td></tr><tr><td>영상 생성</td><td>짧은 홍보 영상 콘티를 실제 영상으로 변환</td><td>짧은 영상 시안</td></tr><tr><td>Canvas</td><td>문서/앱/코드 초안 정리</td><td>수정 가능한 초안</td></tr><tr><td>Gems</td><td>반복 업무용 개인 비서 만들기</td><td>나만의 업무 Gem 설계안</td></tr></table></section>
+<section id="prompts" class="card"><h2>9. 실습 프롬프트 모음</h2><h3>긴 문서 분석</h3><button class="copy" data-target="p1">복사</button><pre id="p1">업로드한 문서를 바탕으로 다음을 작성해줘.
 
-<section id="message" class="card">
-  <h2>1. 강의 핵심 메시지</h2>
-  <div class="quote">
-    무료 Gemini는 질문, 요약, 글쓰기에는 충분합니다. 하지만 긴 문서, 긴 영상·음성, 반복 업무, 리서치 보고서, Google 앱 연동까지 쓰려면 유료 버전의 차이가 분명합니다.
-  </div>
-  <div class="grid2">
-    <div class="box free"><h3>무료 버전</h3><p>짧은 글쓰기, 간단한 요약, 기본 질문, 기본 이미지/파일 활용에 적합합니다.</p></div>
-    <div class="box paid"><h3>유료 버전</h3><p>더 많은 사용량, 긴 자료 분석, 고급 모델, 예약 작업, 긴 영상·음성 분석, Google 앱 연동에 유리합니다.</p></div>
-  </div>
-</section>
-
-<section id="plans" class="card">
-  <h2>2. 공식 플랜 구분</h2>
-  <table>
-    <tr><th>구분</th><th>공식 표현</th><th>강의에서의 설명</th></tr>
-    <tr><td>무료</td><td>Without a Google AI plan</td><td>Google AI 유료 플랜이 없는 기본 사용</td></tr>
-    <tr><td>Google AI Plus</td><td>유료 입문 플랜</td><td>사용량 증가, 예약 작업·영상 생성 등 일부 유료 기능 시작</td></tr>
-    <tr><td>Google AI Pro</td><td>유료 고급 플랜</td><td>긴 문서 처리, 고급 모델 접근, 1M 문맥, 긴 영상·음성 분석에 유리</td></tr>
-    <tr><td>Google AI Ultra</td><td>최상위 플랜</td><td>가장 높은 한도, Deep Think 등 고급 추론 기능</td></tr>
-  </table>
-  <p class="small">※ 기능명·한도·제공 국가는 Google 정책에 따라 바뀔 수 있습니다. 강의 전 공식 문서와 실제 계정 화면을 다시 확인하세요.</p>
-</section>
-
-<section id="compare" class="card">
-  <h2>3. 무료 vs 유료 한 장 비교</h2>
-  <table>
-    <tr><th>주제</th><th>무료에서는</th><th>유료에서는</th></tr>
-    <tr><td>사용량</td><td>표준 한도, 반복 사용 시 제한 가능</td><td>Plus 2배, Pro 4배, Ultra는 Pro 대비 5배 또는 20배</td></tr>
-    <tr><td>긴 문서</td><td>32K tokens 문맥</td><td>Plus 128K, Pro/Ultra 1M tokens</td></tr>
-    <tr><td>긴 영상</td><td>총 5분</td><td>Pro/Ultra 총 1시간</td></tr>
-    <tr><td>긴 오디오</td><td>총 10분</td><td>Pro/Ultra 총 3시간</td></tr>
-    <tr><td>예약 작업</td><td>불가</td><td>Plus 이상 가능</td></tr>
-    <tr><td>Daily brief</td><td>불가</td><td>Plus 이상 가능</td></tr>
-    <tr><td>Deep Research</td><td>가능할 수 있으나 한도·혼잡 영향 큼</td><td>더 높은 한도와 안정적 접근</td></tr>
-    <tr><td>Deep Think</td><td>불가</td><td>Ultra 전용</td></tr>
-    <tr><td>영상 생성</td><td>불가</td><td>Plus 이상 가능</td></tr>
-    <tr><td>Google 앱 연동</td><td>일부 Connected Apps, 복사·붙여넣기 중심</td><td>Gmail, Docs, Sheets 등 앱 내 활용 범위 확대</td></tr>
-  </table>
-</section>
-
-<section id="limits" class="card">
-  <h2>4. 실습 1 — 사용량과 긴 자료 처리</h2>
-  <h3>무료에서 막히는 지점</h3>
-  <p>짧은 자료는 잘 처리하지만, 긴 PDF·긴 보고서·여러 자료를 한 번에 넣으면 전체 맥락을 놓치거나 답변 품질이 떨어질 수 있습니다.</p>
-  <h3>유료에서 가능해지는 지점</h3>
-  <p>Pro/Ultra의 1M token context window는 긴 보고서, 전자책 초안, 강의자료 묶음처럼 큰 자료를 분석하는 데 유리합니다.</p>
-  <div class="warning"><strong>강의 포인트:</strong> 무료는 짧은 자료 요약, 유료는 긴 자료 전체 분석에 적합합니다.</div>
-</section>
-
-<section id="media" class="card">
-  <h2>5. 실습 2 — 영상·음성 자료 분석</h2>
-  <table>
-    <tr><th>자료</th><th>무료</th><th>Pro/Ultra</th><th>활용 예시</th></tr>
-    <tr><td>동영상</td><td>총 5분</td><td>총 1시간</td><td>강의 영상, 인터뷰 영상 요약</td></tr>
-    <tr><td>오디오</td><td>총 10분</td><td>총 3시간</td><td>회의 녹음, 상담 녹음, 강의 녹음 정리</td></tr>
-  </table>
-  <p>유료에서는 긴 회의·강의 자료를 요약하고, 핵심 내용·할 일·질문 목록으로 정리하는 실습이 가능합니다.</p>
-</section>
-
-<section id="research" class="card">
-  <h2>6. 실습 3 — Deep Research와 고급 추론</h2>
-  <div class="grid2">
-    <div class="box free"><h3>무료</h3><p>간단한 질문과 요약, 기본적인 조사에는 사용할 수 있지만, 한도와 고수요 상황의 영향을 받을 수 있습니다.</p></div>
-    <div class="box paid"><h3>유료</h3><p>Deep Research 접근성과 한도가 높아져 출처 기반 보고서, 시장조사, 직무조사에 더 적합합니다.</p></div>
-  </div>
-  <div class="box purple"><h3>Ultra 전용: Deep Think</h3><p>복잡한 문제를 더 깊게 추론하는 기능입니다. 기초 글쓰기보다는 복잡한 기획, 수학, 코딩, 논리 검토에 적합합니다.</p></div>
-</section>
-
-<section id="content" class="card">
-  <h2>7. 실습 4 — 이미지·영상 콘텐츠 제작</h2>
-  <table>
-    <tr><th>작업</th><th>무료</th><th>유료</th></tr>
-    <tr><td>이미지 생성</td><td>가능하나 해상도·한도 제한</td><td>고급 재생성, 더 높은 다운로드 해상도</td></tr>
-    <tr><td>이미지 다운로드</td><td>1K</td><td>2K</td></tr>
-    <tr><td>영상 기획</td><td>대본·콘티 작성 가능</td><td>동일</td></tr>
-    <tr><td>실제 영상 생성</td><td>불가</td><td>Plus 이상 가능</td></tr>
-  </table>
-  <div class="quote">무료는 콘텐츠 기획까지, 유료는 이미지·영상 제작까지 확장할 수 있습니다.</div>
-</section>
-
-<section id="workspace" class="card">
-  <h2>8. 실습 5 — Google 앱 연동</h2>
-  <p>Gemini 웹과 Workspace 앱 안의 Gemini는 구분해야 합니다.</p>
-  <table>
-    <tr><th>구분</th><th>무료 중심</th><th>유료/Workspace 중심</th></tr>
-    <tr><td>Gmail</td><td>Gemini에서 초안 생성 후 복사·붙여넣기</td><td>Gmail 안에서 작성·요약·교정 기능 활용</td></tr>
-    <tr><td>Docs</td><td>Gemini에서 문서 초안 작성 후 붙여넣기</td><td>Docs 안에서 작성·요약·수정</td></tr>
-    <tr><td>Sheets</td><td>표 내용을 Gemini에 붙여넣거나 파일 업로드</td><td>Sheets 안에서 AI 분석·인사이트 활용</td></tr>
-    <tr><td>Drive</td><td>일부 연결 가능, 계정 차이 있음</td><td>Drive 파일 기반 요약·PDF 분석 확장</td></tr>
-  </table>
-</section>
-
-<section id="practice" class="card">
-  <h2>9. 2시간 강의 흐름</h2>
-  <table>
-    <tr><th>시간</th><th>내용</th><th>무료와의 차이 설명</th></tr>
-    <tr><td>0:00~0:10</td><td>Gemini 무료/유료 차이 소개</td><td>왜 유료를 쓰는지 설명</td></tr>
-    <tr><td>0:10~0:30</td><td>긴 문서 분석 실습</td><td>무료 32K vs Pro 1M</td></tr>
-    <tr><td>0:30~0:50</td><td>파일·영상·음성 분석 실습</td><td>무료 영상 5분/음성 10분 한계</td></tr>
-    <tr><td>0:50~1:10</td><td>Deep Research 또는 고급 리서치</td><td>무료 한도 vs 유료 안정성</td></tr>
-    <tr><td>1:10~1:20</td><td>휴식</td><td>-</td></tr>
-    <tr><td>1:20~1:40</td><td>Google 앱 연동/업무 적용</td><td>무료는 복붙, 유료는 앱 내 활용</td></tr>
-    <tr><td>1:40~1:55</td><td>예약 작업·반복 업무 활용</td><td>무료 불가, 유료 가능</td></tr>
-    <tr><td>1:55~2:00</td><td>정리</td><td>유료가 필요한 경우 판단 기준</td></tr>
-  </table>
-</section>
-
-<section id="prompts" class="card">
-  <h2>10. 실습 프롬프트</h2>
-  <h3>긴 문서 분석</h3><button class="copy" data-target="p1">복사</button>
-  <pre id="p1">이 자료를 바탕으로 다음을 정리해줘.
-
-1. 핵심 내용 5가지
+1. 핵심 요약 5줄
 2. 전체 목차 구조
-3. 중요한 주장과 근거
-4. 실무에 적용할 수 있는 점
-5. 추가로 확인해야 할 내용
+3. 가장 중요한 주장 3개와 근거
+4. 실무에 적용할 수 있는 아이디어 5개
+5. 추가로 확인해야 할 사실과 질문
 
 주의:
-- 자료에 없는 내용은 추측하지 말고 “확인 필요”라고 표시해줘.
-- 중요한 수치와 날짜는 원문 기준으로 다시 확인해야 한다고 표시해줘.</pre>
-  <h3>회의·강의 영상/음성 요약</h3><button class="copy" data-target="p2">복사</button>
-  <pre id="p2">이 영상 또는 음성 자료를 분석해서 다음 형식으로 정리해줘.
+자료에 없는 내용은 추측하지 말고 “확인 필요”라고 표시해줘.</pre><h3>영상·음성 회의록</h3><button class="copy" data-target="p2">복사</button><pre id="p2">업로드한 영상/음성 자료를 회의록 형태로 정리해줘.
 
-1. 전체 내용 5줄 요약
-2. 주요 주제별 정리
-3. 결정사항 또는 핵심 메시지
-4. 내가 해야 할 일
-5. 다시 확인해야 할 내용
-6. 질문 목록 5개</pre>
-  <h3>유료 필요성 판단</h3><button class="copy" data-target="p3">복사</button>
-  <pre id="p3">내가 Gemini 유료 버전이 필요한지 판단하고 싶어.
+1. 전체 요약
+2. 주요 논의 주제
+3. 결정사항
+4. 담당자별 할 일
+5. 다음 회의에서 확인할 질문
+6. 원문에서 다시 확인해야 할 부분</pre><h3>Deep Research</h3><button class="copy" data-target="p3">복사</button><pre id="p3">다음 주제에 대해 Deep Research 보고서를 만들어줘.
 
-내 사용 목적은 다음과 같아.
-- 주로 하는 작업:
-- 한 달 사용 빈도:
-- 다루는 자료 종류:
-- 긴 문서/영상/음성 사용 여부:
-- Gmail, Docs, Sheets 연동 필요 여부:
+[주제]
+청년 대상 생성형AI 활용 교육에서 꼭 다뤄야 할 실습 주제
 
-무료 버전으로 충분한지, 유료 버전이 필요한지 표로 비교해서 판단해줘.</pre>
-</section>
+[보고서 형식]
+1. 핵심 요약
+2. 최근 흐름
+3. 실습 주제 추천
+4. 교육 운영 시 주의사항
+5. 참고 출처
+6. 내가 강의안으로 바꿀 때 필요한 구성안</pre><h3>예약 작업 설계</h3><button class="copy" data-target="p4">복사</button><pre id="p4">다음 반복 업무를 Gemini Scheduled actions로 만들고 싶어.
 
-<section id="decision" class="card">
-  <h2>11. 유료 결제 판단 기준</h2>
-  <table>
-    <tr><th>무료로 충분한 사람</th><th>유료가 필요한 사람</th></tr>
-    <tr><td>가끔 질문한다</td><td>하루에도 여러 번 AI를 쓴다</td></tr>
-    <tr><td>짧은 글을 요약한다</td><td>긴 PDF, 보고서, 전자책을 분석한다</td></tr>
-    <tr><td>이메일·자기소개 초안을 만든다</td><td>회의 녹음, 강의 영상, 인터뷰 파일을 요약한다</td></tr>
-    <tr><td>AI를 처음 배운다</td><td>리서치 보고서를 자주 만든다</td></tr>
-    <tr><td>콘텐츠 아이디어가 필요하다</td><td>이미지·영상 콘텐츠 제작까지 하고 싶다</td></tr>
-    <tr><td>Google 앱에 복사해서 쓰면 충분하다</td><td>Gmail, Docs, Sheets 안에서 바로 AI를 쓰고 싶다</td></tr>
-  </table>
-</section>
+[반복 업무]
+매주 월요일 오전에 이번 주 학습 계획을 정리받기
 
-<section id="sources" class="card">
-  <h2>12. 공식 출처</h2>
-  <ul>
-    <li><a href="https://support.google.com/gemini/answer/16275805" target="_blank">Gemini Apps limits & upgrades</a></li>
-    <li><a href="https://support.google.com/gemini/answer/14517446" target="_blank">Manage your Google AI plan</a></li>
-    <li><a href="https://one.google.com/about/google-ai-plans/" target="_blank">Google AI plans</a></li>
-    <li><a href="https://support.google.com/gemini/answer/14903178" target="_blank">Upload & analyze files in Gemini Apps</a></li>
-    <li><a href="https://support.google.com/gemini/answer/16316416" target="_blank">Scheduled actions</a></li>
-    <li><a href="https://support.google.com/gemini/answer/16345172" target="_blank">Deep Think</a></li>
-    <li><a href="https://ai.google.dev/gemini-api/docs/pricing" target="_blank">Gemini API Pricing</a></li>
-    <li><a href="https://workspace.google.com/pricing.html" target="_blank">Google Workspace Pricing</a></li>
-  </ul>
-  <div class="warning">기능과 한도는 계정 유형, 국가, 연령, 언어, 출시 상태, Google 정책에 따라 달라질 수 있습니다. 강의 전 실제 계정 화면으로 재확인하세요.</div>
-</section>
-</main>
-</div>
-<script>
-  document.querySelectorAll('.copy').forEach(btn=>btn.addEventListener('click', async()=>{const el=document.getElementById(btn.dataset.target); await navigator.clipboard.writeText(el.innerText); btn.textContent='복사됨'; setTimeout(()=>btn.textContent='복사',1200)}));
-</script>
-</body>
-</html><!-- protected-content-end --></div>
-  <script>
-    const PASS_HASH = '743392a6cfca212568fbd1ca6b693f91f583f67672f2698b000dc20e062ddf6e';
-    async function sha256(text) {
-      const data = new TextEncoder().encode(text);
-      const digest = await crypto.subtle.digest('SHA-256', data);
-      return Array.from(new Uint8Array(digest)).map(b => b.toString(16).padStart(2, '0')).join('');
-    }
-    function showContent() {
-      document.getElementById('gate').style.display = 'none';
-      document.getElementById('content').style.display = 'block';
-      sessionStorage.setItem('ai-2-ok', '1');
-    }
-    async function checkPassword() {
-      const value = document.getElementById('password').value.trim();
-      const got = await sha256(value);
-      if (got === PASS_HASH) showContent();
-      else document.getElementById('error').textContent = '입장 코드가 맞지 않습니다.';
-    }
-    if (sessionStorage.getItem('ai-2-ok') === '1') showContent();
-    document.getElementById('enter').addEventListener('click', checkPassword);
-    document.getElementById('password').addEventListener('keydown', e => { if (e.key === 'Enter') checkPassword(); });
-  </script>
-</body>
-</html>
+다음 형식으로 예약 작업 문장을 만들어줘.
+1. Gemini에 입력할 예약 요청문
+2. 매주 받을 결과물 형식
+3. 내가 미리 입력해야 할 정보
+4. 주의해야 할 점</pre></section>
+<section id="safety" class="card"><h2>10. 실습 안전 원칙</h2><ul><li>실제 개인정보, 주민등록번호, 계좌번호, 비밀번호, 인증번호는 입력하지 않습니다.</li><li>회사 내부자료, 고객명단, 비공개 계약서, 민감한 학교/기관 자료는 업로드하지 않습니다.</li><li>AI가 만든 결과는 초안입니다. 중요한 수치, 날짜, 법률·의료·금융 판단은 공식 출처로 확인합니다.</li><li>유료 기능은 계정·국가·언어·관리자 설정에 따라 다르게 보일 수 있습니다.</li><li>이미지·영상 생성 결과는 저작권, 초상권, 허위정보 문제를 확인합니다.</li></ul></section>
+<section id="sources" class="card"><h2>11. 공식 출처</h2><ul><li><a href="https://support.google.com/gemini/answer/16275805" target="_blank">Gemini Apps limits & upgrades</a></li><li><a href="https://support.google.com/gemini/answer/14903178" target="_blank">Upload & analyze files in Gemini Apps</a></li><li><a href="https://support.google.com/gemini/answer/16316416" target="_blank">Scheduled actions</a></li><li><a href="https://support.google.com/gemini/answer/15719111" target="_blank">Deep Research</a></li><li><a href="https://support.google.com/gemini/answer/16345172" target="_blank">Deep Think</a></li><li><a href="https://one.google.com/about/google-ai-plans/" target="_blank">Google AI plans</a></li><li><a href="https://workspace.google.com/pricing.html" target="_blank">Google Workspace Pricing</a></li></ul></section>
+</main></div><script>document.querySelectorAll('.copy').forEach(btn=>btn.addEventListener('click',async()=>{const el=document.getElementById(btn.dataset.target);await navigator.clipboard.writeText(el.innerText);btn.textContent='복사됨';setTimeout(()=>btn.textContent='복사',1200)}));</script>
+</body></html><!-- protected-content-end --></div><script>const PASS_HASH='743392a6cfca212568fbd1ca6b693f91f583f67672f2698b000dc20e062ddf6e';async function sha256(text){const data=new TextEncoder().encode(text);const digest=await crypto.subtle.digest('SHA-256',data);return Array.from(new Uint8Array(digest)).map(b=>b.toString(16).padStart(2,'0')).join('')}function showContent(){document.getElementById('gate').style.display='none';document.getElementById('content').style.display='block';sessionStorage.setItem('ai-2-ok','1')}async function checkPassword(){const value=document.getElementById('password').value.trim();const got=await sha256(value);if(got===PASS_HASH)showContent();else document.getElementById('error').textContent='입장 코드가 맞지 않습니다.'}if(sessionStorage.getItem('ai-2-ok')==='1')showContent();document.getElementById('enter').addEventListener('click',checkPassword);document.getElementById('password').addEventListener('keydown',e=>{if(e.key==='Enter')checkPassword()});</script></body></html>
