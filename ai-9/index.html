@@ -12,8 +12,8 @@
 <div id="gate"><div class="login-card"><h1>AI-9 Gemini × Google Workspace 실습</h1><p>Drive, Docs, Sheets, Slides, NotebookLM, YouTube 요약, Deep Research를 연결해 나만의 업무 지식 흐름을 만드는 실습 자료입니다.</p><label for="password">입장 코드</label><input id="password" type="password" placeholder="입장 코드를 입력하세요" autocomplete="off"/><button id="enter" onclick="checkPassword()">입장하기</button><div id="error" class="error"></div><div class="hint">이 화면은 가벼운 입장 코드입니다. 민감정보·유료 원본자료 보호용 보안 로그인은 아닙니다.</div></div></div>
 <div id="content"><!-- protected-content-start -->
 <div class="modebar"><div class="modebar-inner"><div><span class="mode-title">보기 모드</span> <span class="mode-hint">교안모드는 전체 보기, 수업모드는 한 섹션씩 진행합니다.</span></div><div class="mode-actions"><span id="lessonProgress"></span><button id="syllabusMode" class="mode-btn active" type="button">교안모드</button><button id="lessonMode" class="mode-btn" type="button">수업모드</button></div></div></div>
-<div class="wrap"><nav><b>수업 목차</b><a href="#goal">0. 오늘 만들 결과물</a><a href="#drive">1. Drive 실습 폴더 만들기</a><a href="#docs">2. Docs 회의 메모 정리</a><a href="#sheets">3. Sheets 피드백 분류·대시보드</a><a href="#slides">4. Slides 발표 흐름 만들기</a><a href="#notebook">5. NotebookLM 지식창고 만들기</a><a href="#youtube">6. YouTube 요약 저장하기</a><a href="#research">7. Deep Research 결과 검토</a><a href="#finish">8. 나만의 업무 시스템 완성</a></nav><main>
-<section id="goal" class="card hero"><h1>0. 오늘 만들 결과물</h1><p class="lead">오늘은 Google에 흩어진 자료를 Gemini로 읽고, 정리하고, 다시 쓸 수 있는 개인 업무 지식 흐름을 직접 만듭니다.</p><p><span class="badge">Drive 폴더</span><span class="badge">Docs 요약본</span><span class="badge">Sheets 분류표</span><span class="badge">Slides 발표 흐름</span><span class="badge">NotebookLM 지식창고</span></p><div class="flow"><div class="mini coral"><strong>1</strong>자료 정리</div><div class="mini orange"><strong>2</strong>문서 수정</div><div class="mini green"><strong>3</strong>표로 검토</div><div class="mini black"><strong>4</strong>지식창고</div><div class="mini"><strong>5</strong>재사용</div></div><div class="material"><strong>실습자료</strong><br/>강사가 공유한 Drive 폴더에서 `AI-9 Gemini Google Workspace 실습자료`를 열고 필요한 파일을 내려받거나 복사합니다.<br/><a href="https://drive.google.com/drive/folders/1wSxQpVSDJNAuUE4HSRt00GuB9-lx-rtx" target="_blank" rel="noopener">Drive 실습자료 폴더 열기</a></div></section>
+<div class="wrap"><nav><b>수업 목차</b><a href="#goal">0. 오늘 만들 결과물</a><a href="#drive">1. Drive 실습 폴더 만들기</a><a href="#docs">2. Docs 회의 메모 정리</a><a href="#sheets">3. Sheets 데이터 분류·대시보드</a><a href="#slides">4. Slides 발표 흐름 만들기</a><a href="#notebook">5. NotebookLM 지식창고 만들기</a><a href="#youtube">6. YouTube 요약 저장하기</a><a href="#research">7. Deep Research 결과 검토</a><a href="#finish">8. 나만의 업무 시스템 완성</a></nav><main>
+<section id="goal" class="card hero"><h1>0. 오늘 만들 결과물</h1><p class="lead">오늘은 Google에 흩어진 자료를 Gemini로 읽고, 정리하고, 다시 쓸 수 있는 개인 업무 지식 흐름을 직접 만듭니다.</p><p><span class="badge">Drive 폴더</span><span class="badge">Docs 요약본</span><span class="badge">Sheets 대시보드</span><span class="badge">Slides 발표 흐름</span><span class="badge">NotebookLM 지식창고</span></p><div class="flow"><div class="mini coral"><strong>1</strong>자료 정리</div><div class="mini orange"><strong>2</strong>문서 수정</div><div class="mini green"><strong>3</strong>표로 검토</div><div class="mini black"><strong>4</strong>지식창고</div><div class="mini"><strong>5</strong>재사용</div></div><div class="material"><strong>실습자료</strong><br/>강사가 공유한 Drive 폴더에서 `AI-9 Gemini Google Workspace 실습자료`를 열고 필요한 파일을 내려받거나 복사합니다.<br/><a href="https://drive.google.com/drive/folders/1wSxQpVSDJNAuUE4HSRt00GuB9-lx-rtx" target="_blank" rel="noopener">Drive 실습자료 폴더 열기</a></div></section>
 <section id="drive" class="card"><h2>1. Drive 실습 폴더 만들기</h2><p class="lead">먼저 오늘 만든 결과물을 한곳에 모을 폴더를 만듭니다. AI 결과를 다시 찾을 수 있어야 업무에 재사용할 수 있습니다.</p><div class="grid"><div class="mini coral"><strong>폴더 1</strong>`01_원본자료` — 회의 메모, 영상 링크, PDF, 웹 링크</div><div class="mini green"><strong>폴더 2</strong>`02_AI요약` — Gemini가 만든 초안</div><div class="mini orange"><strong>폴더 3</strong>`03_수정본` — 내가 검토하고 고친 최종본</div><div class="mini black"><strong>폴더 4</strong>`04_발표자료` — Slides, 이미지, 공유용 파일</div></div><h3>Gemini에게 폴더 규칙 만들기</h3><div class="prompt"><button class="copy" onclick="copyPrompt(this)">복사</button>내 Google Drive에 AI 실습 결과물을 정리하려고 해.
 폴더 구조와 파일명 규칙을 초보자도 따라 할 수 있게 제안해줘.
 조건:
@@ -31,26 +31,31 @@
 버전 2: 수강생 안내문처럼 친절하게
 버전 3: 카드뉴스 문구처럼 짧게
 각 버전마다 제목 후보도 3개씩 제안해줘.</div></section>
-<section id="sheets" class="card"><h2>3. Sheets 피드백 분류와 대시보드 만들기</h2><p class="lead">실습자료의 `02_sheets_feedback_samples.csv`를 Google Sheets로 열고, Gemini로 피드백을 먼저 분류한 뒤 한눈에 보는 대시보드를 만듭니다.</p><div class="split"><div class="mini coral"><strong>1. 분류</strong>피드백 문장을 긍정, 어려움, 개선 요청, 다음 강의 반영으로 나눕니다.<br/><a href="https://drive.google.com/file/d/1PtbtnHuwi55rFk-KNGhLPmZy4mC5a-17/view?usp=drivesdk" target="_blank" rel="noopener">수강생 피드백 CSV 파일 열기</a></div><div class="mini green"><strong>2. 대시보드 생성</strong>분류 결과를 요약 카드, 빈도표, 다음 액션 목록으로 정리합니다.</div></div><div class="grid3"><div class="mini coral"><strong>요약 카드</strong>전체 피드백 수, 긍정 수, 개선 요청 수</div><div class="mini orange"><strong>분류 표</strong>분류별 대표 문장과 빈도</div><div class="mini green"><strong>다음 액션</strong>다음 강의에서 바로 바꿀 점</div></div><h3>1단계: 피드백 분류 프롬프트</h3><div class="prompt"><button class="copy" onclick="copyPrompt(this)">복사</button>이 표는 수강생 피드백 CSV 파일이야.
-각 문장을 아래 4개 분류로 나눠줘.
+<section id="sheets" class="card"><h2>3. Sheets 데이터 분류와 대시보드 만들기</h2><p class="lead">아래 Google Sheets 실습파일을 열고, `Raw Data` 시트의 AI 활용 데이터를 분류한 뒤 `Dashboard` 시트처럼 한눈에 보는 대시보드를 만듭니다.</p><div class="material"><strong>실습파일</strong><br/>`ai_data_statistics_dashboard_practice.xlsx` 파일을 Google Sheets에서 엽니다.<br/><a href="https://docs.google.com/spreadsheets/d/1TZgBQBL-dxH6-4Pn9J1qurKJLO-VIniv/edit?gid=315923456#gid=315923456" target="_blank" rel="noopener">AI 데이터 통계·대시보드 실습파일 열기</a></div><div class="split"><div class="mini coral"><strong>1. 분류</strong>`Raw Data`에서 AI Tool, Use Case, Department, Adoption Level, Satisfaction, Productivity Gain을 기준으로 데이터를 나눕니다.</div><div class="mini green"><strong>2. 대시보드 생성</strong>분류 결과를 핵심 지표 카드, 도구별 사용량, 월별 추세, 부서별 비교로 시각화합니다.</div></div><div class="grid3"><div class="mini coral"><strong>요약 카드</strong>총 응답 수, 평균 주간 AI 활용, 평균 생산성 향상, 평균 만족도</div><div class="mini orange"><strong>분류 차트</strong>AI 도구별 사용량, 활용 목적별 비율, 도입 수준별 분포</div><div class="mini green"><strong>인사이트</strong>어떤 부서·도구·활용 목적에서 효과가 큰지 정리</div></div><h3>1단계: 데이터 분류 프롬프트</h3><div class="prompt"><button class="copy" onclick="copyPrompt(this)">복사</button>이 Google Sheets 파일의 `Raw Data` 시트는 AI 활용 설문/사용 기록 데이터야.
+먼저 데이터를 분석하기 좋은 기준으로 분류해줘.
 
-분류:
-1. 긍정
-2. 어려웠던 점
-3. 개선 요청
-4. 다음 강의 반영
+분류 기준:
+1. AI Tool: ChatGPT, Gemini, Claude, Microsoft Copilot, Custom AI
+2. Use Case: Content creation, Data analysis, Customer support, Code assistance 등
+3. Department: Sales, Marketing, Operations, HR, Finance, IT
+4. Adoption Level: Explorer, Regular, Power
+5. 성과 지표: Weekly AI Hours, Productivity Gain %, Satisfaction (1-5), Automation Rate %
 
-결과는 `번호 / 원문 / 분류 / 핵심 키워드 / 강사가 확인할 점` 열을 가진 표로 정리해줘.
-한 문장에 분류가 2개 이상 섞여 있으면 가장 중요한 분류 1개를 선택해줘.</div><h3>2단계: 대시보드 생성 프롬프트</h3><div class="prompt"><button class="copy" onclick="copyPrompt(this)">복사</button>방금 분류한 피드백 결과를 바탕으로 Google Sheets 대시보드 구성을 만들어줘.
-아래 순서로 정리해줘.
+결과는 아래 형식으로 정리해줘.
+- 분류 기준
+- 각 분류에서 볼 핵심 지표
+- 어떤 피벗 테이블을 만들면 좋은지
+- 대시보드에서 어떤 차트로 보여주면 좋은지</div><h3>2단계: 대시보드 생성 프롬프트</h3><div class="prompt"><button class="copy" onclick="copyPrompt(this)">복사</button>`Raw Data`, `Summary Stats`, `Pivot Data` 시트를 참고해서 AI 활용 현황 대시보드를 만들려고 해.
+Google Sheets에서 만들 대시보드 구성을 제안해줘.
 
-1. 상단 요약 카드: 전체 피드백 수, 긍정 수, 어려움 수, 개선 요청 수
-2. 분류별 빈도표: 분류 / 개수 / 비율
-3. 핵심 키워드 TOP 5
-4. 대표 피드백 문장 2개씩
-5. 다음 강의에서 바로 반영할 액션 3개
+대시보드 구성:
+1. 상단 KPI 카드: 총 응답 수, 평균 주간 AI 활용 시간, 평균 생산성 향상, 평균 만족도, Power user 비중
+2. 월별 추세: Month별 응답 수, 평균 생산성 향상, 평균 주간 AI 활용 시간
+3. 도구별 비교: AI Tool별 응답 수와 평균 생산성 향상
+4. 부서별 비교: Department별 평균 주간 AI 활용 시간, 평균 만족도
+5. 인사이트 박스: 데이터에서 읽을 수 있는 핵심 해석 3개
 
-Sheets에서 보기 좋게 표 제목과 열 이름까지 제안해줘.</div></section>
+각 영역에 사용할 표 범위, 차트 종류, 제목 문구를 함께 제안해줘.</div></section>
 <section id="slides" class="card"><h2>4. Slides 발표 흐름 만들기</h2><p class="lead">Docs에서 정리한 안내문이나 Sheets 분석 결과를 5장 발표 흐름으로 바꿉니다.</p><div class="grid"><div class="mini coral"><strong>1장</strong>오늘의 주제와 왜 중요한가</div><div class="mini orange"><strong>2장</strong>핵심 내용 3가지</div><div class="mini green"><strong>3장</strong>표나 사례로 보는 결과</div><div class="mini black"><strong>4~5장</strong>실행 계획과 다음 행동</div></div><h3>Slides 구성 프롬프트</h3><div class="prompt"><button class="copy" onclick="copyPrompt(this)">복사</button>이 문서 내용을 10분 발표자료 5장으로 구성해줘.
 각 장표마다 다음을 써줘.
 1. 장표 제목
